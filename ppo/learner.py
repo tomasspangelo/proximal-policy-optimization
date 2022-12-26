@@ -227,12 +227,12 @@ class Learner:
 
         return batches
 
-    # TODO: Incorporate batch size
     def update(self, epochs: int, batch_mode: bool = False, batch_size: int = 0) -> np.ndarray:
         """
         Update the weights for actor / critic network using PPO algorithm (clipped surrogate + MSE + Entropy bonus)
         Buffer is cleared after update is performed.
         :param batch_mode: True if batch mode is activated, otherwise False.
+        :param batch_size: Batch size used for training.
         :param epochs: number of epochs used for training
         :return: None
         """
