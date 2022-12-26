@@ -27,7 +27,7 @@ class Environment:
 
 class MountainEnv(Environment):
     def __init__(self):
-        env = gym.make('MountainCar-v0')
+        env = gym.make('MountainCar-v0', render_mode='human')
         super(MountainEnv, self).__init__(sum(env.observation_space.shape), 3)
         self.env = env
 
@@ -46,7 +46,7 @@ class MountainEnv(Environment):
 
 class CartPoleEnv(Environment):
     def __init__(self):
-        env = gym.make('CartPole-v1').env
+        env = gym.make('CartPole-v1', render_mode='human')
         super(CartPoleEnv, self).__init__(sum(env.observation_space.shape), 2)
         print(env.observation_space)
         print(env.action_space)
