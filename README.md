@@ -1,6 +1,6 @@
 # Proximal Policy Optimization
 
-An implementation from the state-of-the-art family of reinforcement learning algorithms [Proximal Policy Optimization](https://openai.com/blog/openai-baselines-ppo/) using normalized [Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438) and optional batch mode training. 
+An implementation from the state-of-the-art family of reinforcement learning algorithms [Proximal Policy Optimization](https://openai.com/blog/openai-baselines-ppo/) using normalized [Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438) and optional batch mode training. The loss function incorporates entropy.
 
 ## How to use
  1. Clone the repository to get the files locally on your computer (see https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository, `Cloning an Existing Repository`)
