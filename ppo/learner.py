@@ -236,7 +236,7 @@ class Learner:
         :param epochs: number of epochs used for training
         :return: None
         """
-        # Do not normalize discounted rewards (can be done by uncommenting below)
+        
         data = self.get_data()
         discounted_rewards = data['discounted_rewards']
         batch_size = batch_size if batch_mode else len(discounted_rewards)
@@ -246,6 +246,7 @@ class Learner:
         loss_dev = np.zeros(epochs)
         for e in range(epochs):
             for batch in batches:
+                # Do not normalize discounted rewards (can be done by uncommenting below)
                 discounted_rewards = torch.tensor(data['discounted_rewards'][batch], dtype=torch.float32).to(
                     self.device)
                 # discounted_rewards = (discounted_rewards - discounted_rewards.mean()) / (discounted_rewards.std() + 1e-7)
