@@ -2,6 +2,8 @@
 
 An implementation from the state-of-the-art family of reinforcement learning algorithms [Proximal Policy Optimization](https://openai.com/blog/openai-baselines-ppo/) using normalized [Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438) and optional batch mode training. The loss function incorporates entropy.
 
+The code contains a lot of comments and can be helpful to understand both PPO and PyTorch.
+
 ## How to use
  1. Clone the repository to get the files locally on your computer (see https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository, `Cloning an Existing Repository`)
  2. Navigate into the root folder of the project: `/ppo`
